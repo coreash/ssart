@@ -1,0 +1,10 @@
+@charset "euc-kr";
+
+@media screen and (min-width:1300px){
+	#header{padding-left:100px;}
+	#header #lnb_sub .area_lnb_sub{max-width:1350px;}
+	.content{padding-left:100px;}
+	#footer{padding-left:130px;}
+	#quick_top{right:5%;bottom:5%;}
+	#header #lnb_sub .lnb_sub_content div.company{margin-right:180px;}
+}

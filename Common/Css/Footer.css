@@ -1,0 +1,19 @@
+@charset "euc-kr";
+
+#footer{clear:both;line-height:18px;padding:35px 0 35px 76px;background-color:#392f2e;color:#fff;}
+.footer_logo{float:left;width:161px;height:26px;margin-right:38px;background:url("../../Images/Common/footer_logo.png") no-repeat 0 0;text-indent:-9999em;}
+.footer_content{float:left;width:358px;height:28px;background:url("../../Images/Common/footer_copyright.png") no-repeat 0 0;text-indent:-9999em;}
+#footer:after{content:"";display:block;clear:both;}
+#area_pharmon_wrap{position:absolute;width:100%;height:100%;left:0;top:0;font-family:"±¼¸²",Gulim,"µ¸¿ò",Dotum;}
+#area_pharmon_wrap .bg{position:absolute;width:100%;min-width:1230px;height:100%;background-color:#000;}
+#area_pharmon_wrap .area_login{position:relative;width:682px;height:250px;margin:250px 0 0 -341px;left:50%;background-color:#fff;z-index:5050;}
+#area_pharmon_wrap .area_login:after{content:"";display:block;clear:both;}
+#area_pharmon_wrap .area_login .intro{float:left;width:315px;height:250px;background-color:#f7f7f7;border-right:1px solid #e9e9e9;}
+#area_pharmon_wrap .area_login .intro h1{width:172px;height:63px;margin:47px 0 0 70px;background:url("../../Images/Common/pharmon_logo.gif") no-repeat;white-space:nowrap;text-indent:-9999em;overflow:hidden;}
+#area_pharmon_wrap .area_login .intro p{padding-left:20px;}
+#area_pharmon_wrap .area_login .intro p strong{font-weight:normal;color:red;}
+#area_pharmon_wrap .area_login #frmPharmonLogin fieldset.area_input div{width:244px;height:33px;border:1px solid #ddd;}
+#area_pharmon_wrap .area_login #frmPharmonLogin fieldset.area_input div input{position:absolute;width:145px;height:18px;line-height:18px;margin-left:30px;padding:10px 0 4px 0;font-size:18px;border:none;outline:none;}
+#area_pharmon_wrap .area_login .other{width:246px;margin-top:15px;color:#7e817e;}
+#area_pharmon_wrap .area_login .area_log .other:after{content:"";display:block;clear:both;}
+#area_pharmon_wrap .area_login #btn_close{position:absolute;left:647px;top:14px;cursor:pointer;}

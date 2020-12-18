@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="kr">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>신성아트컴</title>
+  <style>
+	#bg{ width:1900px; height:1100px; margin:0 auto;}
+  </style>
+ </head>
+ <body>
+  <div id="bg" style="width:1200px; margin:0 auto;">
+		<span style="display:block;"><a href="#" id="btn_close" style="width:1200px;cursor:pointer;" class="btn_m"><img src="dm.jpg" style="width:1200px; margin:0 auto;"></a></span>
+
+		<div style="position:relative;left:680px;top:-950px;width:420px;height:500px;border:0px solid gold;"  class="btn_bannerImg">
+		</div>
+		<input type="hidden" id="vs" name="vs"/>
+	</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+$(function(){
+	initImg();
+});
+
+initImg = function(){
+	$(".btn_bannerImg")
+		.on("click",function(){return false;})
+		.hover(showImgPop,hideImgPop);
+	
+	$(".btn_m").on("mouseover",function(){
+		$("#popImg").remove();
+	  document.getElementById("vs").value="false";
+	});
+	
+}
+showImgPop = function(e){
+	if (document.getElementById("vs").value == "true")
+			return;
+
+	var $img = $("<div id='popImg' style='border:1px solid #ccc;z-index:5050;position:absolute;top:50%;left:43%;'  class='btn_bannerImg'><img src='contents2.png' alt='' /></div>");
+	$img.appendTo('body');
+  document.getElementById("vs").value="true";
+}
+
+hideImgPop = function(){
+		if (document.getElementById("vs").value == "true")
+				return;
+
+	$("#popImg").remove();
+  document.getElementById("vs").value="false";
+}
+
+$("#btn_close").on("click",function(){
+		window.open("about:black","_self").close();
+	})
+
+//]]>
+</script>
+ </body>
+</html>

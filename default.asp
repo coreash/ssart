@@ -1,0 +1,3 @@
+<%
+Response.redirect "./intro.html"
+%>
