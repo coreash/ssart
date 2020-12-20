@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  border-top: 10px solid #0065b3;
+}
+footer {
+  background-color: #392f2e;
+}
