@@ -2,9 +2,7 @@ import React from 'react';
 import { HashRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
 import Navigation from './navigation';
 import Main from '../routes/main';
-import Company from '../routes/company';
-import Product from '../routes/product';
-import Consulting from '../routes/consulting';
+import SubRouter from '../components/subRouter';
 
 const AppRouter = () => {
     return (
@@ -14,15 +12,9 @@ const AppRouter = () => {
                 <Route exact path="/">
                     <Main />
                 </Route>
-                <Route exact path="/company">
-                    <Company />
-                </Route>
-                <Route exact path="/product">
-                    <Product />
-                </Route>
-                <Route exact path="/consulting">
-                    <Consulting />
-                </Route>
+                <Route path="/company" component={SubRouter} />
+                <Route path="/product" component={SubRouter} />
+                <Route path="/consulting" component={SubRouter} />
                 <Redirect from="*" to="/"></Redirect>
             </Switch>
         </Router>

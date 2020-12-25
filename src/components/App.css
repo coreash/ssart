@@ -1,10 +1,64 @@
-body {
+body,
+div,
+ul {
   margin: 0;
   padding: 0;
 }
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: "NanumGothic", "나눔고딕", "돋움", "dotum";
+}
 header {
+  display: flex;
+  padding: 20px 20px 10px;
   border-top: 10px solid #0065b3;
+  border-bottom: 3px solid #d5d5c9;
+}
+.mainLogo {
+  flex: 1;
+}
+.gnb {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+.gnb li a {
+  display: block;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+.gnb li a:hover {
+  background-color: #666;
+  color: #fff;
+}
+.content {
+  display: flex;
+  padding: 30px;
+  background-color: #e7e6e3;
 }
 footer {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 12px;
+  color: #fff;
   background-color: #392f2e;
+}
+footer p,
+footer address {
+  margin: 0;
+  padding: 5px 0;
+}
+.companyLogo {
+  flex: 1;
+  text-align: center;
+}
+.companyInfo {
+  flex: 3;
 }
